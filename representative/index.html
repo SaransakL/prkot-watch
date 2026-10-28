@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+
+    <meta property="og:title" content="สภาผู้แทนราษฎร - PRKOT Watch">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prkot-watch.vercel.app/">
+    <meta property="og:image" content="https://prkot-watch.vercel.app/assets/og.png">
+    <meta property="og:site_name" content="PRKOT Watch - รู้ทันรัฐสภา เข้าใจทุกความเคลื่อนไหว">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="สภาผู้แทนราษฎร - PRKOT Watch">
+    <meta name="twitter:image" content="https://prkot-watch.vercel.app/assets/og.png">
+    
+    <title>สภาผู้แทนราษฎร - PRKOT Watch</title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+    
+    <script src="/load.js"></script>
+</head>
+<body>
+
+<header id="header"></header>
+
+<main>
+<div class="page-header">
+    <h1>
+        สภาผู้แทนราษฎรชุดที่ 4
+        <br>
+        <p>
+            13 ตุลาคม 2569-ปัจจุบัน
+        </p>
+    </h1>
+</div>
+
+<section class="parliament-stats">
+
+    <div class="stats-group">
+        <div class="stats-heading">
+            <h2>ฝ่ายรัฐบาล</h2>
+            <span id="government-total">0 คน</span>
+        </div>
+
+        <div class="party-bar" id="government-bar"></div>
+        <div class="party-legend" id="government-legend"></div>
+    </div>
+
+    <div class="stats-group">
+        <div class="stats-heading">
+            <h2>ฝ่ายค้าน</h2>
+            <span id="opposition-total">0 คน</span>
+        </div>
+
+        <div class="party-bar" id="opposition-bar"></div>
+        <div class="party-legend" id="opposition-legend"></div>
+    </div>
+
+    <div class="stats-group">
+        <div class="stats-heading">
+            <h2>ไม่ระบุขั้ว</h2>
+            <span id="unknown-total">0 คน</span>
+        </div>
+
+        <div class="party-bar" id="unknown-bar"></div>
+        <div class="party-legend" id="unknown-legend"></div>
+    </div>
+
+</section>
+
+
+<section class="members-section">
+
+    <div class="members-group">
+        <div class="members-heading">
+            <h2>ฝ่ายรัฐบาล</h2>
+        </div>
+        <div id="government-members"></div>
+    </div>
+
+    <div class="members-group">
+        <div class="members-heading">
+            <h2>ฝ่ายค้าน</h2>
+        </div>
+        <div id="opposition-members"></div>
+    </div>
+
+    <div class="members-group">
+        <div class="members-heading">
+            <h2>ไม่ระบุขั้ว</h2>
+        </div>
+        <div id="unknown-members"></div>
+    </div>
+
+</section>
+
+</main>
+
+<footer id="footer"></footer>
+
+<script src="/parliament.js"></script>
+
+
+</body>
+</html>
