@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+
+    <meta property="og:title" content="คณะรัฐมนตรี - PRKOT Watch">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prkot-watch.vercel.app/">
+    <meta property="og:image" content="https://prkot-watch.vercel.app/assets/og.png">
+    <meta property="og:site_name" content="PRKOT Watch - รู้ทันรัฐสภา เข้าใจทุกความเคลื่อนไหว">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="คณะรัฐมนตรี - PRKOT Watch">
+    <meta name="twitter:image" content="https://prkot-watch.vercel.app/assets/og.png">
+
+    <title>คณะรัฐมนตรี - PRKOT Watch</title>
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+
+    <script src="/load.js"></script>
+</head>
+<body>
+
+<header id="header"></header>
+
+<main>
+    <div class="page-header">
+        <h1>
+            คณะรัฐมนตรีชุดที่ 6
+            <p>22 ตุลาคม 2569-ปัจจุบัน</p>
+        </h1>
+    </div>
+
+    <div id="cabinetLoading" class="cabinet-message">
+        <i class="bi bi-arrow-repeat"></i>
+        กำลังโหลดข้อมูลคณะรัฐมนตรี...
+    </div>
+
+    <div id="cabinetError" class="cabinet-message" hidden>
+        ไม่สามารถโหลดข้อมูลคณะรัฐมนตรีได้
+    </div>
+
+    <div id="cabinetContent" hidden>
+        <!-- นายกรัฐมนตรี -->
+        <section class="cabinet-section">
+            <div class="cabinet-section-heading">
+                <h2>นายกรัฐมนตรี</h2>
+            </div>
+
+            <div id="primeMinister" class="prime-minister-container"></div>
+        </section>
+
+        <!-- รองนายกรัฐมนตรี -->
+        <section class="cabinet-section">
+            <div class="cabinet-section-heading">
+                <h2>รองนายกรัฐมนตรี</h2>
+            </div>
+
+            <div id="deputyPrimeMinisters" class="cabinet-grid"></div>
+        </section>
+
+        <!-- รัฐมนตรีว่าการกระทรวง -->
+        <section class="cabinet-section">
+            <div class="cabinet-section-heading">
+                <h2>รัฐมนตรี</h2>
+            </div>
+
+            <div id="ministers" class="cabinet-grid"></div>
+        </section>
+    </div>
+</main>
+
+<script src="/cabinet.js" defer></script>
+
+<footer id="footer"></footer>
+
+</body>
+</html>
