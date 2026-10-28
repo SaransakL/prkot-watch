@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
+
+:root {
+    --color-primary: #ccff00;
+    --color-primary-dark: #a8d600;
+    --color-primary-light: #e5ff80;
+
+    --color-secondary: #3b82f6;
+    --color-secondary-dark: #2563eb;
+    --color-secondary-light: #60a5fa;
+
+    --color-black: #000000;
+    --color-black-soft: #111111;
+    --color-white: #ffffff;
+
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #cccccc;
+    --color-gray-400: #999999;
+    --color-gray-500: #666666;
+    --color-gray-600: #444444;
+    --color-gray-700: #2b2b2b;
+    --color-gray-800: #1a1a1a;
+    --color-gray-900: #0d0d0d;
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+
+    --bg-dark: #000000;
+    --bg-dark-soft: #111111;
+
+    --bg-brand: #ccff00;
+    --bg-brand-secondary: #3b82f6;
+
+    --text-primary: #000000;
+    --text-secondary: #444444;
+    --text-muted: #777777;
+
+    --text-light: #ffffff;
+    --text-brand: #ccff00;
+    --text-brand-secondary: #3b82f6;
+
+    --border-light: #e5e5e5;
+    --border-dark: #333333;
+    --border-brand: #ccff00;
+    --border-brand-secondary: #3b82f6;
+
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #3bb5f6;
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-3xl: 3rem;
+
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.16);
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s ease;
+    --transition-slow: 0.4s ease;
+}
+
+* {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 0;
+    height: 60px;
+
+    background-color: var(--bg-dark);
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    height: 100%;
+    padding: 0 10px;
+
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: var(--font-md);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+header nav a i {
+    color: var(--text-brand-secondary);
+}
+
+header .logo {    
+    background-color: var(--bg-brand);
+    text-decoration: none;
+    height: 100%;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+header .logo img {
+    height: 30px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    transform: translate(-10%);
+
+    min-width: 200px;
+
+    background: var(--bg-dark);
+    padding: 0 0 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    z-index: 3000;
+
+    transition: var(--transition-normal);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 30px;
+
+    color: var(--text-light);
+    font-size: var(--font-md);
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: var(--bg-dark) url('/assets/hero.svg')
+        no-repeat bottom center / cover;
+
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.footer-brand .logo {
+    filter: brightness(0) invert(1);
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer-brand .logo img {
+    height: 3rem;
+}
+
+.footer-brand p {
+    margin: 20px 0 0;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+
+    border-top: 1px solid var(--color-gray-800);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+.page-header h1 {
+    margin: 0;
+
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+
+    z-index: 1;
+}
+
+.page-header h1 p {
+    font-weight: 300;
+    font-size: var(--font-md);
+}
+
+.page-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: var(--font-xl);
+}
+
+.page-nav i {
+    color: var(--text-brand-secondary);
+}
+
+.page-nav.prev {
+    left: 80px;
+}
+
+.page-nav.next {
+    right: 80px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content img {
+    display: block;
+    width: auto;
+    height: 200px;
+}
+
+main {
+    padding: 40px;
+}
+
+section {
+    padding-top: 40px;
+}
+
+.parliament-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.stats-group {
+    width: 100%;
+}
+
+.stats-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.stats-heading h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.stats-heading > span {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.party-bar {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    overflow: hidden;
+    gap: 2px;
+}
+
+.party-segment {
+    flex: 0 0 auto;
+    height: 100%;
+    min-width: 1px;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: partyGrow 1s ease-out forwards;
+
+    transition: var(--transition-slow);
+}
+
+.party-segment:last-child {
+    border-right: 0;
+}
+
+@keyframes partyGrow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .party-segment {
+        animation: none;
+        transform: none;
+        transition: none;
+    }
+}
+
+.party-legend {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 4px;
+    margin-top: 8px;
+}
+
+.party-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    min-width: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.party-name {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 3px;
+}
+
+.party-name > span:last-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.party-dot {
+    flex: 0 0 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.party-count {
+    flex: 0 0 auto;
+    color: #888;
+    font-variant-numeric: tabular-nums;
+}
+
+.members-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: var(--text-primary);
+}
+
+.members-group {
+    margin-bottom: 36px;
+}
+
+.members-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.members-heading h2 {
+    margin: 0;
+    font-size: var(--font-2xl);
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.members-party {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.members-party-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 8px 14px;
+    margin-bottom: 16px;
+
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.party-logo {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+
+.members-party-heading h3 {
+    margin: 0;
+    font-size: var(--font-md);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.members-party-heading > span {
+    color: #888;
+    font-size: var(--font-sm);
+    white-space: nowrap;
+}
+
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 24px;
+}
+
+.member-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+}
+
+.member-avatar {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background: #eeeeee;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.member-name {
+    margin: 0 0;
+    font-size: var(--font-md);
+    font-weight: 500;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.member-party-name {
+    color: #777777;
+    font-size: var(--font-sm);
+    line-height: 1.5;
+}
+
+
+/* Cabinet page */
+.cabinet-message {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: var(--font-md);
+}
+
+.cabinet-message i {
+    margin-right: 8px;
+}
+
+.cabinet-message[hidden],
+#cabinetContent[hidden] {
+    display: none;
+}
+
+.cabinet-section {
+    padding-top: 48px;
+}
+
+.cabinet-section-heading {
+    margin-bottom: 24px;
+}
+
+.cabinet-section-heading h2 {
+    margin: 0;
+    font-size: var(--font-2xl);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.cabinet-subtitle {
+    margin: 4px 0 0;
+    color: var(--text-muted);
+    font-size: var(--font-sm);
+}
+
+/* Prime minister */
+.prime-minister-container {
+    width: 100%;
+}
+
+.cabinet-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    min-width: 0;
+}
+
+.cabinet-card-prime {
+    align-items: center;
+    gap: 32px;
+    padding: 28px;
+    background: var(--bg-secondary);
+    border-left: 5px solid var(--color-primary);
+}
+
+.cabinet-image-wrap {
+    flex: 0 0 100px;
+    height: 120px;
+    overflow: hidden;
+    background: var(--color-gray-200);
+}
+
+.cabinet-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.cabinet-card-prime .cabinet-image-wrap {
+    flex-basis: 180px;
+    width: 180px;
+    height: 220px;
+}
+
+.cabinet-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.cabinet-position {
+    margin-bottom: 6px;
+    color: var(--text-muted);
+    font-size: var(--font-sm);
+    font-weight: 500;
+}
+
+.cabinet-name {
+    margin: 0;
+    font-size: var(--font-lg);
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.cabinet-card-prime .cabinet-name {
+    font-size: var(--font-2xl);
+}
+
+.cabinet-ministry {
+    margin: 8px 0 0;
+    color: var(--text-secondary);
+    font-size: var(--font-md);
+    line-height: 1.7;
+}
+
+.cabinet-description {
+    margin: 8px 0 0;
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    line-height: 1.7;
+}
+
+.cabinet-party {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    background: var(--color-gray-200);
+    color: var(--text-secondary);
+    font-size: var(--font-xs);
+    border-radius: 1000px;
+}
+
+/* Deputy PM and ministers */
+.cabinet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px 24px;
+}
+
+.cabinet-grid .cabinet-card {
+    gap: 14px;
+}
+
+.cabinet-grid .cabinet-image-wrap {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 120px;
+}
+
+.cabinet-grid .cabinet-name {
+    font-size: var(--font-md);
+}
+
+.cabinet-grid .cabinet-position {
+    font-size: var(--font-xs);
+    line-height: 1.6;
+}
+
+.cabinet-grid .cabinet-ministry {
+    margin-top: 5px;
+    font-size: var(--font-sm);
+}
+
+.cabinet-grid .cabinet-party {
+    margin-top: 8px;
+}
