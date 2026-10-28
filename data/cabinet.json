@@ -1,1 +1,211 @@
 
+{
+  "cabinet": {
+    "number": 6,
+    "startDate": "22 ตุลาคม 2569",
+    "status": "ปัจจุบัน",
+    "primeMinister": {
+      "name": "ชัยชนก ชิดซ้าย",
+      "position": "นายกรัฐมนตรี",
+      "image": "/assets/member/ชัยชนก-ชิดซ้าย.jpg",
+      "party": "พรรคภูมิใจช้าง",
+      "description": ""
+    },
+    "deputyPrimeMinisters": [
+      {
+        "name": "ศุภมาส อิสรภักดี",
+        "position": "รองนายกรัฐมนตรี",
+        "image": "/assets/member/ศุภมาส-อิสรภักดี.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "portfolio": "",
+        "description": ""
+      },
+      {
+        "name": "สุชาติ ตัวตัน",
+        "position": "รองนายกรัฐมนตรี",
+        "image": "/assets/member/สุชาติ-ตัวตัน.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "portfolio": "",
+        "description": ""
+      },
+      {
+        "name": "พิพัฒน์ กรอบหร่อยแรง",
+        "position": "รองนายกรัฐมนตรี",
+        "image": "/assets/member/พิพัฒน์-กรอบหร่อยแรง.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "portfolio": "",
+        "description": ""
+      },
+      {
+        "name": "วิษณุ เครือมนตรีวรกุล",
+        "position": "รองนายกรัฐมนตรี",
+        "image": "/assets/member/วิษณุ-เครือมนตรีวรกุล.jpg",
+        "party": "ไม่สังกัดพรรคการเมือง",
+        "portfolio": "",
+        "description": ""
+      },
+      {
+        "name": "ธนาธาร วัฒนไพศาล",
+        "position": "รองนายกรัฐมนตรี",
+        "image": "/assets/member/ธนาธาร-วัฒนไพศาล.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "portfolio": "",
+        "description": ""
+      }
+    ],
+    "ministers": [
+    {
+        "name": "ศุภมาส อิสรภักดี",
+        "position": "",
+        "ministry": "กระทรวงพาณิชย์",
+        "image": "/assets/member/ศุภมาส-อิสรภักดี.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "ศุภมาส อิสรภักดี",
+        "position": "",
+        "ministry": "กระทรวงการคลัง",
+        "image": "/assets/member/ศุภมาส-อิสรภักดี.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "สุชาติ ตัวตัน",
+        "position": "",
+        "ministry": "กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม",
+        "image": "/assets/member/สุชาติ-ตัวตัน.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "พิพัฒน์ กรอบหร่อยแรง",
+        "position": "",
+        "ministry": "กระทรวงคมนาคม",
+        "image": "/assets/member/พิพัฒน์-กรอบหร่อยแรง.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "ธนาธาร วัฒนไพศาล",
+        "position": "",
+        "ministry": "กระทรวงการท่องเที่ยวและกีฬา",
+        "image": "/assets/member/ธนาธาร-วัฒนไพศาล.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "ธนาธาร วัฒนไพศาล",
+        "position": "",
+        "ministry": "กระทรวงวัฒนธรรม",
+        "image": "/assets/member/ธนาธาร-วัฒนไพศาล.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "ณพัทธ์ นรังศิยา",
+        "position": "",
+        "ministry": "สำนักนายกรัฐมนตรี",
+        "image": "/assets/member/ณพัทธ์-นรังศิยา.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "ชัยชนก ชิดซ้าย",
+        "position": "",
+        "ministry": "กระทรวงกลาโหม",
+        "image": "/assets/member/ชัยชนก-ชิดซ้าย.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "ชัยชนก ชิดซ้าย",
+        "position": "",
+        "ministry": "กระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม",
+        "image": "/assets/member/ชัยชนก-ชิดซ้าย.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "รังสิมา พาณิชยการ",
+        "position": "",
+        "ministry": "กระทรวงศึกษาธิการ",
+        "image": "/assets/member/รังสิมา-พาณิชยการ.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "รังสิมา พาณิชยการ",
+        "position": "",
+        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม",
+        "image": "/assets/member/รังสิมา-พาณิชยการ.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "ซาบีโตะ โนบิตะ",
+        "position": "",
+        "ministry": "กระทรวงอุตสาหกรรม",
+        "image": "/assets/member/ซาบีโตะ-โนบิตะ.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "ซาบีโตะ โนบิตะ",
+        "position": "",
+        "ministry": "กระทรวงพลังงาน",
+        "image": "/assets/member/ซาบีโตะ-โนบิตะ.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    },
+    {
+        "name": "กมลา รอฏ์ดอฮ์แซห์",
+        "position": "",
+        "ministry": "กระทรวงสาธารณสุข",
+        "image": "/assets/member/กมลา-รอฏ์ดอฮ์แซห์.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "สุดารัตน์ พัฒนศิริ",
+        "position": "",
+        "ministry": "กระทรวงเกษตรและสหกรณ์",
+        "image": "/assets/member/สุดารัตน์-พัฒนศิริ.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "ยายโอย โซ้ยยาดม",
+        "position": "",
+        "ministry": "กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์",
+        "image": "/assets/member/ยายโอย-โซ้ยยาดม.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "สุรนันท์ อักษรศิริ",
+        "position": "",
+        "ministry": "กระทรวงการต่างประเทศ",
+        "image": "/assets/member/สุรนันท์-อักษรศิริ.jpg",
+        "party": "พรรคคนรุ่นใหม่",
+        "description": ""
+    },
+    {
+        "name": "แสงพิพาก เทพสนาม",
+        "position": "",
+        "ministry": "กระทรวงยุติธรรม",
+        "image": "/assets/member/แสงพิพาก-เทพสนาม.jpg",
+        "party": "พรรคเสนารักษ์ราษฎร์",
+        "description": ""
+    },
+    {
+        "name": "รังษี กิติญานทิพย์",
+        "position": "",
+        "ministry": "กระทรวงมหาดไทย",
+        "image": "/assets/member/รังษี-กิติญานทิพย์.jpg",
+        "party": "พรรคภูมิใจช้าง",
+        "description": ""
+    }
+    ]
+  }
+}

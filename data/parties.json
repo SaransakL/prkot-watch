@@ -1,0 +1,76 @@
+
+{
+  "parliament": {
+    "number": 4,
+    "startDate": "ตุลาคม 2569",
+    "status": "ปัจจุบัน"
+  },
+  "parties": [
+    {
+      "name": "คนรุ่นใหม่",
+      "color": "#00dea8",
+      "bloc": "government",
+      "mps": 29
+    },
+    {
+      "name": "เสนารักษ์ราษฎร",
+      "color": "#ff8c00",
+      "bloc": "government",
+      "mps": 12
+    },
+    {
+      "name": "ภูมิใจช้าง",
+      "color": "#206694",
+      "bloc": "government",
+      "mps": 11
+    },
+    {
+      "name": "ไก่กลม",
+      "color": "#fc00ff",
+      "bloc": "government",
+      "mps": 2
+    },
+    {
+      "name": "ไทยรวมใจ",
+      "color": "#FF00CC",
+      "bloc": "opposition",
+      "mps": 18
+    },
+    {
+      "name": "นิติชน",
+      "color": "#203294",
+      "bloc": "opposition",
+      "mps": 8
+    },
+    {
+      "name": "แรงงานก้าวหน้า",
+      "color": "#FF5757",
+      "bloc": "opposition",
+      "mps": 8
+    },
+    {
+      "name": "กล้าทำงาน",
+      "color": "#FF5722",
+      "bloc": "opposition",
+      "mps": 7
+    },
+    {
+      "name": "ไทยชนะเสมอ",
+      "color": "#FF7D00",
+      "bloc": "opposition",
+      "mps": 7
+    },
+    {
+      "name": "หมอเพื่อประชาชน",
+      "color": "#C98383",
+      "bloc": "unknown",
+      "mps": 2
+    },
+    {
+      "name": "ไม่สังกัดพรรคการเมือง",
+      "color": "#eeeeee",
+      "bloc": "unknown",
+      "mps": 11
+    }
+  ]
+}
